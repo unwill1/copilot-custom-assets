@@ -1,5 +1,5 @@
 ---
-name: customer-debug-flow
+name: customer-debug
 description: |
   当用户描述客户遇到的现场异常现象并寻求根因分析时,自动加载此 skill。
 
@@ -17,15 +17,12 @@ description: |
   - 用户已明确知道根因,只问解决方案
 
   本 skill 提供五步法:demo 对照 → 信息收集 → 多方向假设 → 逐步排除 → 定量分析 → 结论分级。
-mode: agent
-references:
-  - copilot-instructions.md
-  - docs/cases/INDEX.md
+argument-hint: 描述客户现象、已知条件、对比现象，以及已经做过的验证
 ---
 
 # 客户问题排查流程
 
-> 本 skill 与 `copilot-instructions.md` 中的调试原则配合使用——后者规定"怎么做",本 skill 规定"按什么步骤做"。
+> 本 skill 负责现场异常排查流程;通用编码和沟通约束沿用常驻 instructions。
 
 ---
 

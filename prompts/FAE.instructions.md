@@ -1,5 +1,5 @@
 ---
-   applyTo: '**'
+applyTo: '**'
 ---
 # Copilot Instructions
 
@@ -91,7 +91,7 @@ change log.txt 🔒 禁止修改
 - 我贴的代码有 bug：给 diff，不要重抄整个文件
 - 有多种实现方式时，全列出来让我选，不要悄悄挑一个写下去
 - **引用文件必须用可点击的 Markdown 链接**,方便我在 VS Code 里 Ctrl+Click 跳转:
-  - 路径用**工作区相对路径**(从工程根算起),不用绝对路径、不用 `./` 开头
+	- 路径用**工作区相对路径**(从工程根算起),不用绝对路径、不用 `./` 开头
 - 对话结尾**换行加一个“喵喵~”**，表示你完成了这轮任务，等待下一轮指令
 
 ---
@@ -142,10 +142,10 @@ change log.txt 🔒 禁止修改
 - **配置顺序**：时钟使能后立即访问寄存器（RCC 未生效）、先配参数再使能顺序错、GPIO 复用冲突。指纹：单独测每模块都好组合起来不行
 - **工具链 / 工程配置**：Keil / GCC / IAR 的优化等级、LTO、C 标准（C89/C99/C11）、字节序、是否启用 FPU、浮点 ABI（soft/softfp/hard）、栈堆大小、link/scatter file 内存布局、`char` 默认有无符号、结构体对齐 / packed 行为、预定义宏差异、优化器吃掉了未加 `volatile` 的变量。指纹：**同代码 Keil 好 GCC 坏 / O0 好 O2 坏 / Debug 好 Release 坏** / 打开 LTO 就挂 / 换工具链版本行为变
 - **协议细节**：
-  - USB：枚举描述符、端点 0 处理、挂起/唤醒状态机、VBUS 检测时机
-  - CAN：采样点偏、终端电阻、总线负载
-  - I²C：clock stretching、多主仲裁、死锁恢复（SCL 拉低 9 clock）
-  - UART：波特率误差、半双工方向切换、noise/framing error
+	- USB：枚举描述符、端点 0 处理、挂起/唤醒状态机、VBUS 检测时机
+	- CAN：采样点偏、终端电阻、总线负载
+	- I²C：clock stretching、多主仲裁、死锁恢复（SCL 拉低 9 clock）
+	- UART：波特率误差、半双工方向切换、noise/framing error
 - **一致性**：批次容差、温度漂移、EMC 事件。指纹：A 板好 B 板坏 / 夏天好冬天坏 / 无规律偶发
 
 ### 客户代码拿不到时

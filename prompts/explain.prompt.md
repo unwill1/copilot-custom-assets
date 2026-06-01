@@ -1,12 +1,16 @@
 ---
-name: 理解客户代码模式
-description: 快速理解基于原厂 API 编写的客户代码,默认讲解架构+画框图,提到"有问题"时切换到 review+debug 模式
-references:
-  - .github/instructions/FAE.instructions.md
-  - .github/skills/customer-debug-flow/SKILL.md
+description: 快速理解基于原厂 API 编写的客户代码,默认讲解架构与链路;当描述中出现客户反馈、现场异常、找 bug 等关键词时,切到 customer-debug 排查流程
+argument-hint: 描述要理解的工程范围,或描述已经出现的异常现象
+agent: agent
+tools: [search, read, edit, execute, todos, vscode/askQuestions]
 ---
 
 # 理解客户代码模式
+
+相关上下文:
+
+- [FAE.instructions.md](./FAE.instructions.md)
+- 需要排查现场异常时,转入 `/customer-debug`
 
 本次任务:帮我快速吃透一份客户工程代码。客户基于我们原厂固件库 API 写的应用层,
 通常比较复杂。
@@ -21,10 +25,10 @@ references:
 
 我只想搞清楚这工程怎么跑起来、怎么实现功能。**继续往下看本 prompt 的模式 A 部分**。
 
-### 触发路径:走 `customer-debug-flow` skill
+### 触发路径:走 `/customer-debug` skill
 
 我的描述里出现以下任一关键词时,**不走本 prompt 的模式 A,直接调用
-`customer-debug-flow` skill 的五步法**(本 prompt frontmatter 已 reference):
+`customer-debug` skill 的五步法**(按上面的 skill 名称触发):
 
 - "有问题 / 有 bug / 异常 / 不工作 / 跑飞 / 挂死 / 偶发"
 - "客户反馈 / 客户报告 / 现场 / 复现 / 失败"
@@ -47,7 +51,7 @@ references:
 无论走哪条路,**先用一句话声明你判断的路径和依据**,再开始实际工作:
 
 - "→ 走模式 A(架构理解),你的描述未提到具体异常"
-- "→ 走 customer-debug-flow skill,触发关键词:'客户反馈通信失败'"
+- "→ 走 customer-debug skill,触发关键词:'客户反馈通信失败'"
 - "→ 暂停,需要先问你一个问题:..."
 
 让我能在判断错的第一时间纠正,而不是等你输出完一整套东西才发现走错。

@@ -1,9 +1,15 @@
 ---
-name: Demo 编写模式
 description: 基于现有例程编写或扩展 demo,强制读例程+一次性反问需求细节后再动手
+argument-hint: 描述要新增或修改的 demo 需求
+agent: agent
+tools: [search, read, edit, execute, todos, vscode/askQuestions]
 ---
 
 # Demo 编写模式
+
+相关上下文:
+
+- [FAE.instructions.md](./FAE.instructions.md)
 
 本次任务:基于已打开的**基础工程模板或参考例程**做新 demo,或在已有工程上
 增删改功能。**不是排查问题,不是从零创建工程。**
