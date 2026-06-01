@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "gd32-debugger": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "./mcp/gd32_debug_mcp/gd32_debug_mcp.py"
+      ],
+      "env": {
+        "GD32_TARGET": "GD32F470xI",
+        "GD32_SWD_SPEED_KHZ": "4000",
+        "GD32_SVD_PATH": "<fill-local-path>",
+        "GD32_ELF_PATH": "<fill-local-path>"
+      }
+    }
+  }
+}

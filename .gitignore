@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+Thumbs.db
+.DS_Store
+prompts.zip
+mcp.local.json
+globalStorage/
+workspaceStorage/
+History/
+session-state/

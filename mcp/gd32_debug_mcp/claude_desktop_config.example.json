@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "gd32-debugger": {
+      "command": "python",
+      "args": [
+        "请改成你电脑上的完整路径/gd32_debug_mcp.py"
+      ],
+      "env": {
+        "GD32_TARGET": "GD32F407VG",
+        "GD32_SWD_SPEED_KHZ": "4000"
+      }
+    }
+  }
+}
