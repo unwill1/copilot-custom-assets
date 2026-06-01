@@ -1,10 +1,15 @@
-# Copilot 自定义资源
+# 嵌入式AI工具-Agent在线调试编译烧录
 
 这个仓库用于分享一套可复用的 GitHub Copilot 自定义资源，包含：
 
-- prompts：自定义 prompt 和 instruction 文件
-- skills：自定义 skill
-- mcp：MCP 服务代码
+- prompts：专用于FAE的instruction 文件
+
+- skills：编译、烧录、调试查bug等 skill，部分导入来自小智AI嵌入式AI工具
+
+  包括Agent查用户手册的skill（需要自行转PDF为md并分类索引）
+
+- mcp：MCP 在线调试工具，通过pylink接口实现
+
 - mcp.template.json：脱敏后的 MCP 配置模板
 
 ## 主要资源一览
