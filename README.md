@@ -6,11 +6,9 @@
 
 - skills：编译、烧录、调试查bug等 skill，部分导入来自小智AI嵌入式AI工具
 
-  包括Agent查用户手册的skill（需要自行转PDF为md并分类索引）
+  包括Agent查用户手册的skill（需要自行转PDF为md并建立分类索引）
 
 - mcp：MCP 在线调试工具，通过pylink接口实现
-
-- mcp.template.json：脱敏后的 MCP 配置模板
 
 ## 一键安装
 大模型对话中输入：
