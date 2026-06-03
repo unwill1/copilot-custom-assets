@@ -12,6 +12,13 @@
 
 - mcp.template.json：脱敏后的 MCP 配置模板
 
+## 一键安装
+大模型对话中输入：
+```
+帮我安装 https://github.com/LeoKemp223/embed-ai-tool.git 的 skill和MCP
+```
+安装后还需要继续对话按需安装部分py依赖环境。
+
 ## 主要资源一览
 
 ### Instructions 和 Prompts
